@@ -1,5 +1,4 @@
 /**主进程 */
-const { log } = require("console")
 const {app,BrowserWindow, ipcMain} = require("electron")
 const path = require("path")
 const createWindows = ()=>{
