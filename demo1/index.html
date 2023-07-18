@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- 安全策略 -- 只有自身可以调用主进程对系统进行操作 技术栈CSP -->
+  <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'" /> -->
+  <meta charset="UTF-8">
+  <title>客户端</title>
+  <style>
+    html{
+      /* 点击DOM可拖动 */
+      -webkit-app-region:drag 
+    }
+    textarea{
+      /* 文本域禁止拖动 */
+      -webkit-app-region:no-drag
+    }
+  </style>
+</head>
+<body>
+  <h1>111</h1>
+  <div id="chrome"></div>
+  <div id="electron"></div>
+  <div id="node"></div>
+  <div> 
+    <div id="testContainer">0</div>
+    <!-- <button id="testBtn">主进程向渲染进程通信</button> -->
+  </div>
+</body>
+<script src="./render.js"></script>
+</html>
