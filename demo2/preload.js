@@ -6,6 +6,9 @@ contextBridge.exposeInMainWorld("api",{
   },
   setTitle:(value)=>{
     ipcRenderer.send("setTitle",value)
+  },
+  testInvoke:(value)=>{
+    return ipcRenderer.invoke("testInvoke",value)
   }
 })
 

@@ -33,5 +33,9 @@ ipcMain.on("setTitle",(event,value)=>{
   BrowserWindow.fromWebContents(event.sender).title = value
 })
 
+ipcMain.handle("testInvoke",(event,value)=>{
+  console.log(value);
+  return "测试 Invoke 主进程向渲染进程通信"
+})
 
 
