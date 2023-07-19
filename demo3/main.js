@@ -2,6 +2,7 @@ const {app,BrowserWindow, ipcMain} = require("electron");
 const path = require("path");
 const {createWindow} = require("./window.js")
 
+
 // const createWindow = ()=>{
 //   const mainWindow = new BrowserWindow({
 //     width:400,

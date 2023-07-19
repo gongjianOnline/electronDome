@@ -1,5 +1,6 @@
-const {BrowserWindow} = require('electron')
+const {BrowserWindow,Menu} = require('electron')
 const path = require("path")
+const menu = require("./menu");
 
 const createWindow = ()=>{
   const mainWindow = new BrowserWindow({
@@ -15,6 +16,9 @@ const createWindow = ()=>{
   })
 
   mainWindow.loadFile(path.relative(__dirname,"index.html"))
+
+  const applicationMenu = Menu.buildFromTemplate(menu);
+  Menu.setApplicationMenu(applicationMenu);
 }
 
 module.exports = {createWindow}
