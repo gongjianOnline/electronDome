@@ -1,0 +1,13 @@
+{
+  "name": "demo3",
+  "version": "1.0.0",
+  "main": "main.js",
+  "license": "MIT",
+  "scripts": {
+    "dev":"electron ."
+  },
+  "dependencies": {
+    "electron": "^25.3.0",
+    "nodemon": "^3.0.1"
+  }
+}

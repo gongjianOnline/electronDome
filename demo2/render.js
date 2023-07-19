@@ -11,4 +11,4 @@ titleBtn.onclick = function(){
 invokeBtn.onclick =async function(){
   const result =await window.api.testInvoke("测试 Invoke 渲染进程向主进程通信");
   console.log(result);
-}
+} 
