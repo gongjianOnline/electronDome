@@ -1,4 +1,4 @@
 testBtn.onclick = ()=>{
-  window.api.test()
+  window.api.test();
   // console.log(window);
 }

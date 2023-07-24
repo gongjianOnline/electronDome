@@ -1,6 +1,7 @@
 const {app,BrowserWindow, ipcMain} = require("electron");
 const path = require("path");
 const {createWindow} = require("./window.js")
+const createMenu = require("./menu");
 
 
 // const createWindow = ()=>{
@@ -22,7 +23,8 @@ const {createWindow} = require("./window.js")
 
 
 app.whenReady().then(()=>{
-  createWindow()
+  var window = createWindow()
+  createMenu(window)
 })
 
 
