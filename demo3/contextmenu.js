@@ -6,6 +6,11 @@ ipcMain.on("handelContextmenu",(event)=>{
     {
       label:"退出",
       click:()=>console.log("退出应用")
+    },
+    { type: 'separator' },
+    {
+      label:"右键菜单",
+      click:()=>console.log("右键菜单")
     }
   ]
   const menu = Menu.buildFromTemplate(template)
