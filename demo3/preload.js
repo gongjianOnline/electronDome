@@ -10,5 +10,8 @@ ipcRenderer.on("handelMenu",(event,value)=>{
   contentContainer.innerHTML = value;
 })
 
-
+window.addEventListener("contextmenu",()=>{
+  console.log("右键测试");
+  ipcRenderer.send("handelContextmenu")
+})
 
