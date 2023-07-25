@@ -8,6 +8,10 @@ const createWindow = ()=>{
     alwaysOnTop:true,
     x:100,
     y:100,
+    webPreferences:{
+      preload:resolve(__dirname,"preload.js"),
+      nodeIntegration:true
+    }
   })
   win.webContents.openDevTools();
   win.loadFile(resolve(__dirname,"index.html"))
